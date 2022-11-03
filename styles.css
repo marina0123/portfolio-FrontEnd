@@ -1,0 +1,298 @@
+body {
+    background-color:white;
+}
+
+/* Navbar */
+.navbar {
+    background-color:rgb(190, 232, 249);
+}
+
+#logoArgProg {
+    background-color:rgb(43, 43, 135);
+    width: 3em;
+}
+
+#menu {
+    box-shadow: none;
+}
+
+.navbar-nav > li {
+    padding-right: 3vw;
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color:blue;
+}
+
+.redesSociales{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 10em;
+    margin-top: 0.3em;
+}
+
+.logoRedesSociales {
+    box-shadow: none;
+    color:black;
+}
+
+.acceder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 4em;
+    margin-top: 0.3em;
+}
+
+#login {
+    box-shadow: none;
+    border-color:black;
+}
+
+#login:hover {
+    background-color:rgb(43, 43, 135);
+    color:white;
+}
+
+.modal-title {
+    margin-left: 180px;
+}
+
+#close {
+    box-shadow: none;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color:black;
+}
+
+.texto {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    font-size: 3.3vw;
+}
+
+/* Columna 2, Títulos y Párrafos */
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 40px solid rgb(255, 195, 85);
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(270deg);
+}
+
+.titulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo h1 {
+    font-size: 24px;
+    padding-left: 35px;
+    letter-spacing: 8px;
+}
+
+.linea {
+    border-top-style:solid;
+    border-top-color:rgb(255, 195, 85); 
+    border-top-width: 5px;
+}
+
+.seccion p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    color:black;
+    margin-top: 25px;
+    margin-left: 3vw;
+    margin-bottom: 0vw;
+}
+
+/* Acerca de */
+.foto {
+    width: 170px;
+    margin-top: 20px;
+}
+
+.perfil p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.presentacion p {
+    margin-top: 35px;
+    margin-left: 0px;
+    line-height: 30px;
+}
+
+/* Educación e Idiomas */
+.logoTexto {
+    display: flex;
+    margin-left: -13px;
+}
+
+.logo {
+    margin-top: 27px;
+}
+
+.seccion p.titulo {
+    font-weight: bold;
+    text-align: left;
+}
+
+.seccion p.lugar {
+    font-weight: bold;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    text-align: left;
+}
+
+.seccion p.fecha {
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Idiomas */
+.seccion .idiomasTitulo {
+    font-weight: bold;
+    border-bottom-style: dotted;
+    margin-left: 0px;
+}
+
+.progresoI {
+    display: flex;
+}
+
+.progresoI p {
+    width: 120px;
+}
+
+.barIdiomas {
+    width: 30vw;
+    border-style: solid;
+    border-color:darkblue;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 26px;
+    background-color:white;
+}
+
+.barIdiomas .progress-bar {
+    background-color:rgb(95, 95, 240);
+}
+
+/* Habilidades */
+.progresoH {
+    border-style: solid;
+    border-color:lightblue;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+    padding: 0px;
+    height: 170px;
+    width: 200px;
+    border-radius: 5%;
+}
+
+.progresoH p {
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.barHabilidades {
+    width: 160px;
+    border-style: solid;
+    border-color:darkblue;
+    height: 20px;
+    margin-left: 18px;
+    background-color:white;
+}
+
+.barHabilidades .progress-bar-striped {
+    background-color:rgb(70, 163, 194);
+}
+
+/* Proyectos */
+#proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    width: 400px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card-body .card-text {
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 18px;
+}
+
+.card-body p {
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+    font-size: 15px;
+    margin-left: 1vw;
+}
+
+/* Contacto */
+.formularioContacto {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Columna 3 */
+#iconos {
+    box-shadow: none;
+    font-size: 1.5em;
+}
+
+.tooltip-inner {
+    background-color:rgb(43, 43, 135);
+}
+
+.tooltip-arrow::before {
+    border-right-color: rgb(43, 43, 135) !important;
+    border-left-color: rgb(43, 43, 135) !important;
+}
+
+/* Footer */
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(219, 219, 219);
+    font-size: 18px;
+    height: 40px;
+}
+
+.mail .bi {
+    font-style: normal;
+}
