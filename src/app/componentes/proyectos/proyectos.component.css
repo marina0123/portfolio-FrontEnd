@@ -1,0 +1,67 @@
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 40px solid rgb(255, 195, 85);
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(270deg);
+}
+
+.titulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    padding-left: 2.4em;
+    letter-spacing: 8px;
+}
+
+.linea {
+    border-top-style:solid;
+    border-top-color:rgb(255, 195, 85); 
+    border-top-width: 5px;
+}
+
+#proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.card {
+    width: 450px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+@media (max-width: 575px) {
+    .card {
+        width: 260px;
+    }
+}
+
+h5 {
+    text-align: center;
+}
+
+#proyecto p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    color:black;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+    margin-bottom: 0vw;
+}
+
+.card-body .card-text {
+    margin-right: 1vw;
+}
+
+.card-body p {
+    margin-bottom: 1vw;
+    font-size: 15px;
+}

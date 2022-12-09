@@ -1,0 +1,96 @@
+/* Navbar */
+.navbar {
+    background-color:rgb(190, 232, 249);
+}
+
+#logoArgProg {
+    background-color:rgb(43, 43, 135);
+    width: 3em;
+}
+
+#menu {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-nav > li {
+    padding-right: 3vw;
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color:blue;
+}
+
+.redesSociales{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 10em;
+    margin-top: 0.3em;
+}
+
+.logoRedesSociales {
+    box-shadow: none;
+    color:black;
+}
+
+.acceder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 4em;
+    margin-top: 0.3em;
+}
+
+#login {
+    box-shadow: none;
+    border-color:black;
+}
+
+#login:hover {
+    background-color:rgb(43, 43, 135);
+    color:white;
+}
+
+@media (min-width: 1200px) {
+    .redesSociales {
+        margin-right: 6.8em;
+    }
+    .acceder {
+        margin-right: 0.8em;
+    }
+}
+
+/* The Modal */
+#close {
+    box-shadow: none;
+}
+
+#acceder {
+    display: flex;
+    justify-content: center;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+}
+
+#imagen {
+    padding: 0px;
+    margin-top: 60px;
+}
+
+#texto {
+    position: absolute;
+    font-size: 3.3vw;
+    text-align: center;
+    bottom: 5em;
+    left: -6em;
+}
