@@ -1,0 +1,26 @@
+#banner {
+    position: relative;
+}
+
+#imagen {
+    padding: 0px;
+    margin-top: 60px;
+}
+
+#texto {
+    position: absolute;
+    font-size: 3.3vw;
+    text-align: center;
+    bottom: 5em;
+    left: -6em;
+}
+
+/* Botón Editar */
+#editar {
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    background-color:green;
+    border-color:green;
+    border-radius: 50%;
+}

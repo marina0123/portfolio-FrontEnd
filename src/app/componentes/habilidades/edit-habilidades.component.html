@@ -1,0 +1,33 @@
+<body>
+    
+    <!-- Alert Messages -->
+    <div class="alert alert-success fixed-top" *ngIf="successMessage">
+        <i class="bi bi-check-circle-fill"></i>
+        <p>La habilidad ha sido actualizada</p>
+    </div>
+    <div class="alert alert-danger fixed-top" *ngIf="dangerMessage">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <p>Error al actualizar habilidad</p>
+    </div>
+    
+    <!-- Form -->
+    <div *ngIf="hab">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" id="editarH">
+            <h1 class="m-4">Editar Habilidad</h1>
+            <div class="form-group m-4">
+                <label for="habilidad">Nombre de la habilidad</label>
+                <input type="text" class="form-control" id="habilidad" name="habilidad" [(ngModel)]="hab.habilidad" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="porcentaje">Porcentaje (ingrese solo el número, sin el signo %)</label>
+                <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="hab.porcentaje" required>
+            </div>
+            <div id="editarHabilidades">
+                <button class="btn btn-primary">
+                    Editar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>

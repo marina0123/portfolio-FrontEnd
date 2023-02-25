@@ -1,0 +1,27 @@
+.mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(219, 219, 219);
+    font-size: 18px;
+    height: 80px;
+}
+
+@media (max-width: 374px) {
+    .mail {
+        font-size: 15px;
+    }
+}
+
+.mail .bi {
+    font-style: normal;
+}
+
+#contacto {
+    font-weight: bold;
+}
+
+#AP {
+    margin-top: 10px;
+}

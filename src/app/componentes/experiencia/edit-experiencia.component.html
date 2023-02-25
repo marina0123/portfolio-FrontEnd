@@ -1,0 +1,41 @@
+<body>
+    
+    <!-- Alert Messages -->
+    <div class="alert alert-success fixed-top" *ngIf="successMessage">
+        <i class="bi bi-check-circle-fill"></i>
+        <p>La experiencia ha sido actualizada</p>
+    </div>
+    <div class="alert alert-danger fixed-top" *ngIf="dangerMessage">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <p>Error al actualizar experiencia</p>
+    </div>
+    
+    <!-- Form -->
+    <div *ngIf="expe">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" id="editarE">
+            <h1 class="m-4">Editar Experiencia</h1>
+            <div class="form-group m-4">
+                <label for="puesto">Título del puesto</label>
+                <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="expe.puesto" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="empresa">Nombre de la empresa</label>
+                <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="expe.empresa" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="descripcion">Descripción de las tareas realizadas</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="expe.descripcion" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="periodo">Periodo</label>
+                <input type="text" class="form-control" id="periodo" name="periodo" [(ngModel)]="expe.periodo" required>
+            </div>
+            <div id="editarExperiencia">
+                <button class="btn btn-primary">
+                    Editar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>

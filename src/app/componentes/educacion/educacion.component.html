@@ -1,0 +1,42 @@
+<div class="container-fluid px-5">
+    <div class="row">
+        <div class="col-1">
+            <div class="triangulo">
+            </div>
+        </div>
+        <div class="col-11 titulo">
+            <h1>EDUCACIÓN</h1>
+        </div>
+    </div>
+    <div class="row mx-0 linea">
+    </div>
+    
+    <button type="button" class="btn btn-dark" routerLink="/nuevaeduc" *ngIf="isLogged" id="agregar">
+        Nueva Educación
+    </button>
+    
+    <div *ngFor="let Educacion of educ">
+        <div>
+            <button class="btn btn-dark" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged" id="editar">
+                <i class="bi bi-pencil-fill"></i>
+            </button>
+            <button class="btn btn-dark" (click)="delete(Educacion.id)" *ngIf="isLogged" id="eliminar">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        
+        <div class="row seccion">
+            <div class="item">
+                <div class="icono">
+                    <i class="bi bi-diamond-fill"></i>
+                </div>
+                <div>
+                    <p class="titulo"><strong>{{Educacion.titulo}}</strong></p>      
+                    <p class="instituto">{{Educacion.instituto}}</p>
+                    <p class="periodo">{{Educacion.periodo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="habilidades"></span>
+</div>

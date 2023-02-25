@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row" id="banner">
+        <span id="volverArriba"></span>
+        <img src={{bann.img}} class="img-fluid" alt="banner" id="imagen">
+        <div id="texto">
+            <p>Hola!</p>
+            <p style="margin-top:3vw;">Soy {{bann.nombre}} {{bann.apellido}}</p>
+            <p style="margin-top:7vw; font-style:italic;">{{bann.titulo}}</p>
+            <span id="acercaDe"></span>
+        </div>
+        
+        <!-- Botón Editar -->
+        <div>
+            <button type="button" class="btn btn-dark" routerLink="/editbanner/1" *ngIf="isLogged" id="editar">
+                <i class="bi bi-pencil-fill"></i>
+            </button>
+        </div>
+    </div>
+</div>

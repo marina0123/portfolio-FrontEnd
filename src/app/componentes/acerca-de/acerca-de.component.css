@@ -1,0 +1,62 @@
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 40px solid rgb(255, 195, 85);
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(270deg);
+}
+
+.titulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    padding-left: 2.4em;
+    letter-spacing: 8px;
+}
+
+.linea {
+    border-top-style:solid;
+    border-top-color:rgb(255, 195, 85); 
+    border-top-width: 5px;
+}
+
+#editar {
+    position: absolute;
+    margin-top: -50px;
+    right: 50px;
+    background-color:green;
+    border-color:green;
+    border-radius: 50%;
+}
+
+.seccion p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    color:black;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.perfil p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+.foto {
+    width: 170px;
+    margin-top: 20px;
+}
+
+.descripcion p {
+    margin-top: 20px;
+    margin-left: 0px;
+    line-height: 30px;
+}

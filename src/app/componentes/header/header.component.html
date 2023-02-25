@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+                <img src="assets/logoArgProg.png" alt="Logo de Argentina Programa" id="logoArgProg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="linea" href="#acercaDe">ACERCA DE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">EXPERIENCIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">EDUCACIÓN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">HABILIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">PROYECTOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-text btn-group redesSociales">
+            <button type="button" class="btn">
+                <a href="https://es-la.facebook.com/" class="logoRedesSociales">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </button>
+            <button type="button" class="btn">
+                <a href="https://www.instagram.com/" class="logoRedesSociales">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </button>
+            <button type="button" class="btn">
+                <a href="https://twitter.com/?lang=es" class="logoRedesSociales">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </button>
+        </div>
+        <div class="navbar-text acceder">
+            <button type="button" class="btn" (click)="login()" *ngIf="!isLogged" id="login"><i class="bi bi-person-circle"></i> Acceder</button>
+            <button type="button" class="btn" (click)="onLogOut()" *ngIf="isLogged" id="logout">Cerrar Sesión</button>
+        </div>
+    </nav>
+</div>

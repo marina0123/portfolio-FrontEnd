@@ -1,0 +1,43 @@
+<div class="container-fluid px-5">
+    <div class="row">
+        <div class="col-1">
+            <div class="triangulo">
+            </div>
+        </div>
+        <div class="col-11 titulo">
+            <h1>EXPERIENCIA LABORAL</h1>
+        </div>
+    </div>
+    <div class="row mx-0 linea">
+    </div>
+    
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexpe" *ngIf="isLogged" id="agregar">
+        Nueva Experiencia
+    </button>
+    
+    <div *ngFor="let Experiencia of expe">
+        <div>
+            <button class="btn btn-dark" routerLink="/editexpe/{{Experiencia.id}}" *ngIf="isLogged" id="editar">
+                <i class="bi bi-pencil-fill"></i>
+            </button>
+            <button class="btn btn-dark" (click)="delete(Experiencia.id)" *ngIf="isLogged" id="eliminar">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        
+        <div class="row seccion">
+            <div class="item">
+                <div class="icono">
+                    <i class="bi bi-diamond-fill"></i>
+                </div>
+                <div>
+                    <p class="puesto"><strong>{{Experiencia.puesto}}</strong> en <strong>{{Experiencia.empresa}}</strong></p>
+                    <p class="descripcion">{{Experiencia.descripcion}}</p>
+                    <span id="educacion"></span>
+                    <p class="periodo">{{Experiencia.periodo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

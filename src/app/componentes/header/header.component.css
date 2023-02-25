@@ -1,0 +1,98 @@
+.navbar {
+    background-color:rgb(190, 232, 249);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color:black;
+}
+
+#logoArgProg {
+    background-color:rgb(43, 43, 135);
+    width: 3em;
+}
+
+#menu {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-nav > li {
+    padding-right: 50px;
+}
+
+@media (max-width: 1199px) {
+    .navbar-nav > li {
+        padding-right: 0px;
+    }
+    #linea {
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color:black;
+    }
+}
+
+.nav-link {
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link:hover {
+    color:blue;
+}
+
+.redesSociales{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 10em;
+    margin-top: 0.3em;
+    padding-right: 2em;
+}
+
+.logoRedesSociales {
+    box-shadow: none;
+    color:black;
+}
+
+.logoRedesSociales:hover {
+    color:blue;
+}
+
+.acceder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin-right: 4em;
+    margin-top: 0.3em;
+}
+
+#login {
+    box-shadow: none;
+    border-color:black;
+}
+
+#login:hover {
+    background-color:rgb(43, 43, 135);
+    color:white;
+}
+
+#logout {
+    box-shadow: none;
+    border-color:black;
+}
+
+#logout:hover {
+    background-color:rgb(43, 43, 135);
+    color:white;
+}
+
+@media (min-width: 1200px) {
+    .redesSociales {
+        margin-right: 6.8em;
+    }
+    .acceder {
+        margin-right: 0.8em;
+    }
+}

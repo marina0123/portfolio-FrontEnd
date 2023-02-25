@@ -1,0 +1,51 @@
+<div class="container-fluid px-5">
+    <div class="row">
+        <div class="col-1">
+            <div class="triangulo">
+            </div>
+        </div>
+        <div class="col-11 titulo">
+            <h1>HABILIDADES</h1>
+        </div>
+    </div>
+    <div class="row mx-0 linea">
+    </div>
+    
+    <button type="button" class="btn btn-dark" routerLink="/nuevahab" *ngIf="isLogged" id="agregar">
+        Nueva Habilidad
+    </button>
+    
+    <div class="row seccion">
+        <div class="col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let Habilidades of hab">
+            <circle-progress
+            [radius]="85"
+            [percent]="(Habilidades.porcentaje)"
+            [showTitle]="true"
+            [showUnits]="false"
+            [title]="(Habilidades.habilidad)"
+            [titleColor]="'#000000'"         
+            [titleFontSize]="'18'"
+            [titleFontWeight]="'500'"
+            [showSubtitle]="false"
+            [outerStrokeLinecap]="'square'"
+            [outerStrokeWidth]="10"   
+            [outerStrokeColor]="'#0064c2'"
+            [space]= "-10"
+            [innerStrokeWidth]="10" 
+            [innerStrokeColor]="'#dbdbdb'"
+            [animation]="true"
+            [animationDuration]="600">
+            </circle-progress>
+            
+            <div>
+                <button class="btn btn-dark" routerLink="/edithab/{{Habilidades.id}}" *ngIf="isLogged" id="editar">
+                    <i class="bi bi-pencil-fill"></i>
+                </button>
+                <button class="btn btn-dark" (click)="delete(Habilidades.id)" *ngIf="isLogged" id="eliminar">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<span id="proyectos"></span>

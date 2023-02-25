@@ -1,0 +1,138 @@
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 40px solid rgb(255, 195, 85);
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(270deg);
+}
+
+.titulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    padding-left: 2.4em;
+    letter-spacing: 8px;
+}
+
+.linea {
+    border-top-style:solid;
+    border-top-color:rgb(255, 195, 85); 
+    border-top-width: 5px;
+}
+
+@media (max-width: 768px) {
+    #agregar {
+        margin-top: 20px;
+        width:100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #agregar {
+        position: absolute;
+        margin-top: -50px;
+        right: 50px;
+    }
+}
+
+#editar {
+    position: absolute;
+    margin-top: 20px;
+    right: 100px;
+    background-color:green;
+    border-color:green;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    #editar {
+        right: 50px;
+    }  
+}
+
+#eliminar {
+    position: absolute;
+    margin-top: 20px;
+    right: 50px;
+    background-color:red;
+    border-color:red;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    #eliminar {
+        margin-top: 70px;
+    }
+}
+
+.item {
+    display: flex;
+}
+
+.icono {
+    margin-top:20px;
+    color:#556e79;    
+}
+
+.bi-diamond-fill {
+    position: relative;
+}
+
+.bi-diamond-fill::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    width: 4px;
+    background: #556e79;
+    height: 100px;
+}
+
+@media (max-width: 575px) {
+    .bi-diamond-fill::after {
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) {
+    .seccion {
+        margin-right: 100px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion {
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+}
+
+.seccion p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color:black;
+    margin-left: 20px;
+}
+
+.seccion p.titulo {
+    margin-top:20px;
+}
+
+.seccion p.instituto {
+    margin-top: 10px;
+}
+
+.seccion p.periodo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}

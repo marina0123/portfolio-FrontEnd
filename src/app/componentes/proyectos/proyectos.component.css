@@ -1,0 +1,137 @@
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 40px solid rgb(255, 195, 85);
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(270deg);
+}
+
+.titulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    padding-left: 2.4em;
+    letter-spacing: 8px;
+}
+
+.linea {
+    border-top-style:solid;
+    border-top-color:rgb(255, 195, 85); 
+    border-top-width: 5px;
+}
+
+@media (max-width: 768px) {
+    #agregar {
+        margin-top: 20px;
+        width:100%;
+    }  
+}
+
+@media (min-width: 769px) {
+    #agregar {
+        position: absolute;
+        margin-top: -50px;
+        right: 50px;       
+    }
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+.card {
+    width: 500px;
+    box-shadow: 5px 5px 5px gray;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0%;
+    border-width: 2px;
+    border-top-style: hidden;
+    transition: all .5s ease-in-out; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 575px) {
+    .card {
+        width: 260px;
+    }
+}
+
+.bi-bookmark-fill {
+    position: absolute;
+    left: 3px;
+    top:-3px;
+    font-size: 50px;
+    color: rgb(220, 173, 112);
+}
+
+@media (max-width: 575px) {
+    .bi-bookmark-fill {
+        font-size: 45px;
+    }
+}
+
+h5 {
+    text-align: center;
+    background-color: rgb(250, 227, 185);
+    width: 500px;
+    margin-left: -30px;
+    height: 70px;
+    margin-top: -16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-style:solid;
+}
+
+@media (max-width: 575px) {
+    h5 {
+        width: 260px;
+    }
+}
+
+#proyecto p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    color:black;
+    margin-top: 15px; 
+}
+
+#ver {
+    width:70px;
+}
+
+#editar {
+    margin-right: 3px;
+    background-color:green;
+    border-color:green;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#eliminar {
+    margin-left: 3px;
+    background-color:red;
+    border-color:red;
+    border-radius: 50%;
+    margin-top:10px;
+}

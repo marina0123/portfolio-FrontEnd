@@ -1,0 +1,41 @@
+<body>
+    
+    <!-- Alert Messages -->
+    <div class="alert alert-success fixed-top" *ngIf="successMessage">
+        <i class="bi bi-check-circle-fill"></i>
+        <p>El proyecto ha sido actualizado</p>
+    </div>
+    <div class="alert alert-danger fixed-top" *ngIf="dangerMessage">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <p>Error al actualizar proyecto</p>
+    </div>
+    
+    <!-- Form -->
+    <div *ngIf="proy">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" id="editarP">
+            <h1 class="m-4">Editar Proyecto</h1>
+            <div class="form-group m-4">
+                <label for="nombre">Nombre del proyecto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proy.nombre" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="descripcion">Descripción del proyecto</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="proy.descripcion" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="fecha">Fecha de realización</label>
+                <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="proy.fecha" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="link">URL del proyecto</label>
+                <input type="text" class="form-control" id="link" name="link" [(ngModel)]="proy.link" required>
+            </div>
+            <div id="editarProyectos">
+                <button class="btn btn-primary">
+                    Editar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>

@@ -1,0 +1,41 @@
+<body>
+    
+    <!-- Alert Messages -->
+    <div class="alert alert-success fixed-top" *ngIf="successMessage">
+        <i class="bi bi-check-circle-fill"></i>
+        <p>Proyecto añadido correctamente</p>
+    </div>
+    <div class="alert alert-danger fixed-top" *ngIf="dangerMessage">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <p>Error al añadir nuevo proyecto</p>
+    </div>
+    
+    <!-- Form -->
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm" id="agregarP">
+            <h1 class="m-4">Nuevo Proyecto</h1>
+            <div class="form-group m-4">
+                <label for="nombre">Nombre del proyecto</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="descripcion">Descripción del proyecto</label>
+                <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="fecha">Fecha de realización</label>
+                <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+            </div>
+            <div class="form-group m-4">
+                <label for="link">URL del proyecto</label>
+                <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
+            </div>
+            <div id="agregarProyectos">
+                <button class="btn btn-primary">
+                    Añadir
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
