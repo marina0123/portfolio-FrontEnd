@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Persona } from '../model/persona';
 import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage'
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class PersonaService {
-  URL = 'http://localhost:8080/persona/';
+  URL = environment.URL + 'persona/';
   url: string = "";
 
   constructor(private httpClient: HttpClient, private storage: Storage) {}

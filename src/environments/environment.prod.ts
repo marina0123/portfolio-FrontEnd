@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'portfolio-web-argpro.firebaseapp.com',
     messagingSenderId: '439942901492',
   },
-  production: true
+  production: true,
+  URL: 'https://portfolio-w904.onrender.com/'
 };

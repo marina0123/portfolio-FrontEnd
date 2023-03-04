@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Banner } from '../model/banner';
 import { Storage, ref, uploadBytes, list, getDownloadURL } from '@angular/fire/storage'
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class BannerService {
-  URL = 'http://localhost:8080/banner/';
+  URL = environment.URL + 'banner/';
   url: string = "";
   
   constructor(private httpClient: HttpClient, private storage: Storage) {}
